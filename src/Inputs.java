@@ -21,7 +21,7 @@ public class Inputs {
         // Read the age using the scanner variable
         age = input.nextInt();
 
-
+        // Consume the newline character
         input.nextLine();
 
         // Ask the user to enter hostel
@@ -29,8 +29,10 @@ public class Inputs {
         // Read the hostel using the scanner variable
         hostel = input.nextLine();
 
-        // Print the name
-        System.out.println("Hello " + name + " " + age + "!" + hostel);
+        // Display the result
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Hostel: " + hostel);
 
         // Close the scanner
         input.close();

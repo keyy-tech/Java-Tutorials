@@ -15,12 +15,13 @@ public class TimeConversion {
         total_seconds = scanner.nextInt();
 
         // Perform Calculations
-        int minutes = total_seconds / 60;  // 1 minute = 60 seconds
-        int seconds = total_seconds % 60;  // Remainder in seconds
+        int days = total_seconds / 86400;
+        int hours = (total_seconds % 86400) / 3600;
+        int minutes = ((total_seconds % 86400) % 3600) / 60;
+        int seconds = ((total_seconds % 86400) % 3600) % 60;
 
         // Display the result in MM:SS format
-        System.out.printf("Time: %02d:%02d\n", minutes, seconds);
-
+        System.out.printf("Time: %02d:%02d:%02d:%02d\n", days, hours, minutes, seconds);
         // Close the scanner
         scanner.close();
     }
