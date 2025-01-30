@@ -13,6 +13,7 @@ public class Inputs {
 
         // Ask the user to enter a name
         System.out.print("Enter your name: ");
+
         // Read the name using the scanner variable
         name = input.nextLine();
 
