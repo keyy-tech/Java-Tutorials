@@ -1,0 +1,3 @@
+Using Java to read the file.
+I really like programming using python and java.
+I am a backend beginner using django.
